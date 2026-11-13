@@ -5,21 +5,21 @@
 class Jenktui < Formula
   desc "Terminal UI for Jenkins"
   homepage "https://github.com/dursunkoc/jenktui"
-  version "0.1.4"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dursunkoc/jenktui/releases/download/v0.1.4/jenktui_0.1.4_darwin_amd64.tar.gz"
-      sha256 "50cd37e4b4967f08f867c4a3f5252ada11d18433dca4bc3d648a44d710a67841"
+      url "https://github.com/dursunkoc/jenktui/releases/download/v0.2.0/jenktui_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8ace891a2dd868dd895e37cff217843a3e4ab7166a0cd7d0050978fb7af61527"
 
       define_method(:install) do
         bin.install "jenktui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dursunkoc/jenktui/releases/download/v0.1.4/jenktui_0.1.4_darwin_arm64.tar.gz"
-      sha256 "a7902ea10d2d69fcf69ba8ccda1bda29102bfb3d57dc71bfa627e281e5c0a79f"
+      url "https://github.com/dursunkoc/jenktui/releases/download/v0.2.0/jenktui_0.2.0_darwin_arm64.tar.gz"
+      sha256 "c709ccb6692287d69f08696b07a3c2e60dab544eb15155e6b890434716fb3a2f"
 
       define_method(:install) do
         bin.install "jenktui"
@@ -29,15 +29,15 @@ class Jenktui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dursunkoc/jenktui/releases/download/v0.1.4/jenktui_0.1.4_linux_amd64.tar.gz"
-      sha256 "8f210b3406d118676fad149016cab73886efd6099e2cb94c6a99f8107245e89d"
+      url "https://github.com/dursunkoc/jenktui/releases/download/v0.2.0/jenktui_0.2.0_linux_amd64.tar.gz"
+      sha256 "b1730112dad85aad89fb68efc73b07663bdc602c90f44c69beff1be3edecf0d8"
       define_method(:install) do
         bin.install "jenktui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dursunkoc/jenktui/releases/download/v0.1.4/jenktui_0.1.4_linux_arm64.tar.gz"
-      sha256 "593de235429be4f627a3083c19dcaf9eb2230b120dc6d4ce05e0d800cddb5693"
+      url "https://github.com/dursunkoc/jenktui/releases/download/v0.2.0/jenktui_0.2.0_linux_arm64.tar.gz"
+      sha256 "b8de22d60af51331235ff26c14129f0dd64c139e7bc37ecb46670407fd72acab"
       define_method(:install) do
         bin.install "jenktui"
       end
